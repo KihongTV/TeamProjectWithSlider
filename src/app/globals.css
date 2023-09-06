@@ -1,0 +1,207 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  
+  --swiper-pagination-color: #ff6000;
+  --swiper-pagination-bullet-size: 12px;
+  --swiper-pagination-bullet-width: 12px;
+  --swiper-pagination-bullet-height: 12px;
+  --swiper-pagination-bullet-inactive-color: rgb(146, 146, 146);
+  --swiper-pagination-bullet-inactive-opacity: 0.2;
+  --swiper-pagination-bullet-opacity: 1;
+  --swiper-pagination-bullet-horizontal-gap: 4px;
+  --swiper-pagination-bullet-vertical-gap: 6px;
+  
+}
+.swiper-pagination-bullet-active{
+  
+  border-radius: 2px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+.swiper-slide{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='3000' height='1400' preserveAspectRatio='none' viewBox='0 0 3000 1400'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1038%26quot%3b)' fill='none'%3e%3cpath d='M987.4 285.45 a66.92 66.92 0 1 0 133.84 0 a66.92 66.92 0 1 0 -133.84 0z' stroke='rgba(237%2c 237%2c 237%2c 0.02)'%3e%3c/path%3e%3cpath d='M1905.89 1235.5a135.6 135.6 0 1 0 5.41 271.15z' stroke='rgba(237%2c 237%2c 237%2c 0.02)'%3e%3c/path%3e%3cpath d='M101.48 426a124.5 124.5 0 1 0 155.05 194.83z' fill='rgba(237%2c 237%2c 237%2c 0.02)'%3e%3c/path%3e%3cpath d='M727.56 608.98L831.24 608.98L831.24 671.79L727.56 671.79z' fill='rgba(237%2c 237%2c 237%2c 0.02)'%3e%3c/path%3e%3cpath d='M2215.49 1114.98 a25.14 25.14 0 1 0 50.28 0 a25.14 25.14 0 1 0 -50.28 0z' stroke='rgba(237%2c 237%2c 237%2c 0.02)'%3e%3c/path%3e%3cpath d='M1176.86 433.51L1252.35 433.51L1252.35 509L1176.86 509z' fill='rgba(237%2c 237%2c 237%2c 0.02)'%3e%3c/path%3e%3cpath d='M1800.6 583L1932.25 583L1932.25 714.65L1800.6 714.65z' stroke='rgba(237%2c 237%2c 237%2c 0.02)'%3e%3c/path%3e%3cpath d='M915.32 289.63 a10.88 10.88 0 1 0 21.76 0 a10.88 10.88 0 1 0 -21.76 0z' fill='rgba(237%2c 237%2c 237%2c 0.02)'%3e%3c/path%3e%3cpath d='M1930.82 419.75a112.87 112.87 0 1 0 197.32 109.66z' fill='rgba(237%2c 237%2c 237%2c 0.02)'%3e%3c/path%3e%3cpath d='M1214.38 561.83 a86.06 86.06 0 1 0 172.12 0 a86.06 86.06 0 1 0 -172.12 0z' fill='rgba(237%2c 237%2c 237%2c 0.02)'%3e%3c/path%3e%3cpath d='M1047.6 989.07a101.46 101.46 0 1 0-66.91 191.57z' stroke='rgba(237%2c 237%2c 237%2c 0.02)'%3e%3c/path%3e%3cpath d='M1757.63 389.13L1787.61 389.13L1787.61 440.8L1757.63 440.8z' fill='rgba(237%2c 237%2c 237%2c 0.02)'%3e%3c/path%3e%3cpath d='M2700.18 920.94 a6.37 6.37 0 1 0 12.74 0 a6.37 6.37 0 1 0 -12.74 0z' stroke='rgba(237%2c 237%2c 237%2c 0.02)'%3e%3c/path%3e%3cpath d='M2915.46 697.61 a72.93 72.93 0 1 0 145.86 0 a72.93 72.93 0 1 0 -145.86 0z' fill='rgba(237%2c 237%2c 237%2c 0.02)'%3e%3c/path%3e%3cpath d='M2076.36 852.19 a18.45 18.45 0 1 0 36.9 0 a18.45 18.45 0 1 0 -36.9 0z' stroke='rgba(237%2c 237%2c 237%2c 0.02)'%3e%3c/path%3e%3cpath d='M118.58 1161.43a96.79 96.79 0 1 0 56.97 185.01z' fill='rgba(237%2c 237%2c 237%2c 0.02)'%3e%3c/path%3e%3cpath d='M592.61 1333.85 a84.55 84.55 0 1 0 169.1 0 a84.55 84.55 0 1 0 -169.1 0z' fill='rgba(237%2c 237%2c 237%2c 0.02)'%3e%3c/path%3e%3cpath d='M155.97 555.19L245.37 555.19L245.37 635.53L155.97 635.53z' stroke='rgba(237%2c 237%2c 237%2c 0.02)'%3e%3c/path%3e%3cpath d='M1632.68 929.95a90.58 90.58 0 1 0-173.22-53.02z' fill='rgba(237%2c 237%2c 237%2c 0.02)'%3e%3c/path%3e%3cpath d='M2989.31 523.5L3043.96 523.5L3043.96 588.37L2989.31 588.37z' fill='rgba(237%2c 237%2c 237%2c 0.02)'%3e%3c/path%3e%3cpath d='M1856.2 1115.72L1913.16 1115.72L1913.16 1146.69L1856.2 1146.69z' stroke='rgba(237%2c 237%2c 237%2c 0.02)'%3e%3c/path%3e%3cpath d='M1787.64 582.63L1872.85 582.63L1872.85 644.73L1787.64 644.73z' stroke='rgba(237%2c 237%2c 237%2c 0.02)'%3e%3c/path%3e%3cpath d='M609.64 1141.38L662.19 1141.38L662.19 1248.91L609.64 1248.91z' stroke='rgba(237%2c 237%2c 237%2c 0.02)'%3e%3c/path%3e%3cpath d='M1718.81 1017.35L1729.74 1017.35L1729.74 1046.45L1718.81 1046.45z' fill='rgba(237%2c 237%2c 237%2c 0.02)'%3e%3c/path%3e%3cpath d='M2443.26 1341.45 a39.66 39.66 0 1 0 79.32 0 a39.66 39.66 0 1 0 -79.32 0z' fill='rgba(237%2c 237%2c 237%2c 0.02)'%3e%3c/path%3e%3cpath d='M2812.12 72.8 a95.24 95.24 0 1 0 190.48 0 a95.24 95.24 0 1 0 -190.48 0z' fill='rgba(237%2c 237%2c 237%2c 0.02)'%3e%3c/path%3e%3cpath d='M2520.92 525.56a19.71 19.71 0 1 0-35.32 17.51z' fill='rgba(237%2c 237%2c 237%2c 0.02)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1038'%3e%3crect width='3000' height='1400' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+}
+.swiper-wrapper{
+  display: flex;
+  align-items: center;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: transparent ;
+    
+    
+    padding: 40px !important;
+    color: #ffffff !important;
+    fill: rgb(255, 255, 255) !important;
+    stroke: rgb(255, 255, 255) !important;
+    
+    border-radius: 50%;
+}
+.swiper-button-next{
+  text-shadow: 2px 2px #000000;
+  left: 40px !important;
+}
+.swiper-button-prev{
+  display: none !important;
+}
+@media only screen and (max-width:700px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    background-color: transparent;
+    padding: 0px !important;
+  }
+  .swiper-button-next{
+    left: 10px !important;
+    text-shadow: 2px 2px #000000;
+  }
+  
+}
+
+@font-face {
+    font-family: Vazirmatn;
+    src: url('./../../public/fonts/webfonts/Vazirmatn-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: Vazirmatn;
+    src: url('./../../public/fonts/webfonts/Vazirmatn-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: Vazirmatn;
+    src: url('./../../public/fonts/webfonts/Vazirmatn-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: Vazirmatn;
+    src: url('./../../public/fonts/webfonts/Vazirmatn-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: Vazirmatn;
+    src: url('./../../public/fonts/webfonts/Vazirmatn-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: Vazirmatn;
+    src: url('./../../public/fonts/webfonts/Vazirmatn-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: Vazirmatn;
+    src: url('./../../public/fonts/webfonts/Vazirmatn-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: Vazirmatn;
+    src: url('./../../public/fonts/webfonts/Vazirmatn-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: Vazirmatn;
+    src: url('./../../public/fonts/webfonts/Vazirmatn-Black.woff2') format('woff2');
+   
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+ 
+  
+  #app {
+    height: 100%;
+  }
+  html,
+  body {
+    position: relative;
+    height: 100%;
+  }
+  
+  body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .gradiento{
+    background: rgb(255,96,0);
+background: linear-gradient(63deg, rgba(255,96,0,1) 29%, rgba(40,40,43,1) 29%, rgba(40,40,43,1) 100%);
+  }
+  .gradientb{
+    background: rgb(59, 62, 212);
+background: linear-gradient(63deg, rgb(59, 62, 212) 29%, rgba(40,40,43,1) 29%, rgba(40,40,43,1) 100%);
+  }
+  .gradientg{
+    background: rgb(8, 167, 101);
+background: linear-gradient(63deg, rgb(8, 167, 101) 29%, rgba(40,40,43,1) 29%, rgba(40,40,43,1) 100%);
+  }
+  .o{
+    color: rgb(255,96,0);
+  }
+  .b{
+    color: rgb(59, 62, 212);
+  }
+  .g{
+    color: rgb(8, 167, 101);
+  }
+  .bgo{
+    background-color: rgb(255,96,0);
+  }
+  .bgb{
+    background-color: rgb(59, 62, 212);
+  }
+  .bgg{
+    background-color: rgb(8, 167, 101);
+  }
+  .swiper-slide {
+  
+    
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  
+  
+  
+  
+
+  
+ 
+  
